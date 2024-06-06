@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>View Data</title>
+</head>
+<body>
+<h1>This is your data</h1>
+<h2>If you're seeing repeated data, you didn't comment out the other Method to display data</h2>
+<h3>Please go to viewdata.ejs, i just want to show you the 2 ways to display data by for loop or forEach</h3>
+<hr>
+<h2>But if you're not seeing repeated data, then you're good, you know what you're doing ;)</h2>
+
+<!-- there are 2 ways to display data, use for loop or forEach -->
+ 
+
+
+<!-- Just comment out the one that you don't want to use. because you will see 2 data's here -->
+
+
+<!-- This is the 1st way (Which by the way im using, less code and much cleaner) -->
+<% theData.forEach(function(data){ %>
+	<h2>
+		<%= data.firstname %>
+		<%= data.lastname %>
+		<%= data.age %>
+	</h2>
+<% }) %>
+
+
+
+<!-- This is the 2nd way, i don't use it but i think on certain scenarios it will be useful -->
+<!-- like for example, you dont want the 'i' to start at 0, or maybe you want the 'i' increment by 2, instead of 1 and etc... -->
+<% for(i = 0; i < theData.length; i++){ %>
+	<h2>
+		<%= theData[i].firstname %>
+		<%= theData[i].lastname %>
+		<%= theData[i].age %>
+	</h2>
+<% } %>
+
+
+</body>
+</html>

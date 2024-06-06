@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add Person page</title>
+</head>
+<body>
+<h1>Add person</h1>
+
+<!-- Method 1 -->
+
+<form action="/dataadd" method="POST">
+	<label>Firstname</label>
+	<input type="text" name="thedata[firstname]">
+
+	<label>Lastname</label>
+	<input type="text" name="thedata[lastname]">
+
+	<label>Age</label>
+	<input type="number" name="thedata[age]">
+
+	<button>Submit new data</button>
+</form>
+
+
+
+<!-- Method 2 -->
+
+<!-- <form action="/dataadd" method="POST">
+	<label>Firstname</label>
+	<input type="text" name="firstname">
+
+	<label>Lastname</label>
+	<input type="text" name="surname">
+
+	<label>Age</label>
+	<input type="number" name="edad">
+
+	<button>Submit new data</button>
+</form> -->
+
+
+
+<a href="/" type="button">Go Back</a>
+
+
+
+</body>
+</html>
